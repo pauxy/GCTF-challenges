@@ -37,7 +37,7 @@
 						String ua = request.getHeader( "User-Agent" );
 						num=i;
 						if (ua.equals(a[num])){
-							out.println("Heres the flag \"flag{f_l_a_g}\"");
+							out.println("Heres the flag \"xxxx\"");
 							tru=true;
 						}else{
 							out.print("NO FLAG FOR YOU");
@@ -417,14 +417,5 @@
 		
 		
 			
-			/*arrange*/
-		int arrange(int i){
-			i=3;
-		    i=(i/2);
-		    i=i*5-9*-11;
-		    i=i/2*4;
-		    i=i-200;
-		    i=i/2;
-			return i;
-		}
+/*MY SECRET FUNCTION EXTRA SECURITY*/ aW50IGFycmFuZ2UoaW50IGkpew0KLy9pdmUgYmVlbiBmb3VuZCBvaCBubw0KCQkgICAgaT0zOw0KCQkgICAgaT0oaS8yKTsNCgkJICAgIGk9aSo1LTkqLTExOw0KCQkgICAgaT1pLzIqNDsNCgkJICAgIGk9aS0yMDA7DQoJCSAgICBpPWkvMjsNCgkJCXJldHVybiBpOw0KCQl9
 		
