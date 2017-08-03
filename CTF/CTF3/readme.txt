@@ -1,1 +1,0 @@
-simple forensic question, in which the header of a jpg file is changed a bit, preventing the file to be opened. all you have to do to solve is append "ÿØÿà" to front of file.
