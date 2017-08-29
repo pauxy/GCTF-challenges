@@ -2,7 +2,7 @@
 
 ## Question Text
 
-I found this mysterious cookie secret agency site while browsing the web, please help me find out what it is about
+I found this mysterious secret agency site while browsing the web, please help me find out what conspiracies lies within??!!?!?!?!
 
 Created by paux
 
@@ -11,7 +11,7 @@ Created by paux
 2. upload all 4 files into directory (NO SQL)
 
 ## Distribution
-Distribute all the contents inside `distrib` folder to the users
+no files to be distributed
 
 ## Solution
 
@@ -55,5 +55,4 @@ Heres the flag "GCTF{w3_ar3_7h3_c00k13_ag3nc9}"
 
 
 ## Recommended Reads
-* https://links.to.good.reads
-* https://www.example.com
+
