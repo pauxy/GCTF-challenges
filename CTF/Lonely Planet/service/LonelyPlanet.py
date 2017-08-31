@@ -19,21 +19,21 @@ def getran():
     h=""
     m=""
     e=""
-    k=random.randint(1,8)
-    kj=random.randint(1,8)
+    k=random.randint(0,8)
+    kj=random.randint(0,8)
     while kj==k:
         kj=random.randint(1,8)
     for i in range(random.randint(1,5)):
         j=random.randint(0,len(langs)-1)
         m=m+langs[j][k]+" "
         e=e+langs[j][kj]+" "
-    h="\n"+lang[k]+" text : "+m+"\n"+lang[kj]+" Translation -> "
+    h=lang[k]+" text : "+m+"\n"+lang[kj]+" Translation -> "
     return e,h
     
 def start(c,a):
     try:
         c.sendall('''
-                        ‎         ,o§´A§§$`´´_´-=7JR&oZss
+                        ‎         ,o§´A§§$`´´_´-=7JR&oZs
                                ,o§$$$§$§#9A______´b$$$$§o,
                               R$$$$$$*´´``´_______,o§$´§9$$?,
                             ,$$$$$$´______________,´§Lbd=II?&§
@@ -62,12 +62,12 @@ def start(c,a):
                 / /__| (_) | | | |  __/ | |_| / ___/| | (_| | | | |  __/ |_ 
                 \____/\___/|_| |_|\___|_|\__, \/    |_|\__,_|_| |_|\___|\__|
                                          |___/                              
-~~~~~WELCOME, DEAR EMPLOYEE!~~~~~
-HERE AT THE GALACTIC FEDERATION, WE AIM TO PROVIDE INTERCONNECTEDNESS AMONGST PLANETS
-USING OUR INTERDIMENSIONAL, INTERPLANETARY CHAT SYSTEM, LonelyPlanet HOWEVER, WE WOULD
- REQUIRE YOU TO HELP US TRANSLATE THE MESSAGES TO BE SENT\n 
+                             ~~~~~WELCOME, DEAR EMPLOYEE!~~~~~
+WELCOME TO THE TRANSLATION CONSOLE OF LONELY PLANET! WE HOPE YOU DO A GOOD JOB TODAY!
+
+
 '''.encode())
-        c.sendall("~~~START SHIIFT~~~\n".encode())
+        c.sendall("~~~START SHIFT~~~\n".encode())
         big=random.randint(400,420)
         k=True
         i=0
@@ -96,7 +96,8 @@ USING OUR INTERDIMENSIONAL, INTERPLANETARY CHAT SYSTEM, LonelyPlanet HOWEVER, WE
 
        
 socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-socket.bind(('0.0.0.0',59951))
+socket.bind(('0.0.0.0',59949))
+print(socket)
 socket.listen(5)
 while True:
     c,a=socket.accept()
