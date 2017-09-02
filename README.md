@@ -8,7 +8,7 @@
 - [FILECEPTION](CTF/FILECEPTION)
 - [ILikeScrabble](CTF/ILikeScrabble)
 - [Lonely Planet](CTF/Lonely%20Planet)
-
+- [Spirals](CTF/Spirals)
 
 ## Credits
 <i>Creator - @paux</i>
