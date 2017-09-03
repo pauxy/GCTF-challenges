@@ -10,5 +10,6 @@
 - [Lonely Planet](CTF/Lonely%20Planet)
 - [Spirals](CTF/Spirals)
 - [HiddenHidden](CTF/HiddenHidden)
+- [HAXOR_MUSIX](CTF/HAXOR_MUSIX)
 ## Credits
 <i>Creator - @paux</i>
