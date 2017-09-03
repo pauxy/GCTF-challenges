@@ -20,5 +20,5 @@ file with hidden file
 3.	get flag!
 
 ## Recommended Reads
-veryvery inspired by the `[godeep](https://github.com/rootkie/xctf2017-writeups/tree/master/qualifiers/godeep)` challenge in CrossCtf
+inspired by the [`godeep`](https://github.com/rootkie/xctf2017-writeups/tree/master/qualifiers/godeep) challenge in CrossCtf
 
