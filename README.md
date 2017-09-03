@@ -9,6 +9,6 @@
 - [ILikeScrabble](CTF/ILikeScrabble)
 - [Lonely Planet](CTF/Lonely%20Planet)
 - [Spirals](CTF/Spirals)
-
+- [HiddenHidden](CTF/HiddenHidden)
 ## Credits
 <i>Creator - @paux</i>
