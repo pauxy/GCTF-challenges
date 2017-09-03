@@ -21,5 +21,5 @@ wav file
 ## Recommended Reads
 
 
-##possible changes in futurish times
+## Possible changes in futurish times
 - instead of email, use telegram bot or discord bot
