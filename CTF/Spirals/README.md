@@ -2,7 +2,7 @@
 
 ## Question Text
 
-I just read junji ito's uzumaki and must say... I am very inspired, so i decided to implement a simple encryption function!
+I just read junji ito's uzumaki and i am very inspired, so i decided to implement a simple function!
 
 Good luck!
 
