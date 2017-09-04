@@ -1,4 +1,4 @@
-# Where_Am_I
+# Where_Is_It
 
 ## Question Text
 
@@ -23,7 +23,8 @@ pcap file with network traffic
 
 ## Solution
 
-1.	look through file and you will notice a bunch of tcp packets `86-122`
+
+1.	look through file and you will notice a bunch of tcp packets `86-122`
 2.	you will notice that the last few bits is the message sent
 3. 	piecing all the packet returns the flag.
 
