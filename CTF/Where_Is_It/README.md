@@ -28,7 +28,9 @@ pcap file with network traffic
 2.	you will notice that the last few bits is the message sent
 3. 	piecing all the packet returns the flag.
 
+or 
 
+follow stream!
 
 ## Recommended Reads
 
