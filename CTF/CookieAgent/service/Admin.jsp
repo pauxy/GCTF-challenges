@@ -8,10 +8,10 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	</head>
-	<body>
+		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<% 
-			
+			String img="";
+			String totalzz="";
 			String plaintext1 = request.getParameter("user");
 			String plaintext = request.getParameter("pwd");
 			String nume = request.getParameter("num");
@@ -25,7 +25,7 @@
 			String query;
 			String role="";
 			boolean tru=false;
-			String loc="C:/Users/chuny/workspace/CTF/WebContent/check.txt";
+			String loc="<loc of check.txt>";
 			if(numb){
 				try (BufferedReader br = new BufferedReader(new FileReader(loc))) {
 				    String line1;
@@ -54,12 +54,10 @@
 				    while ((line1 = br.readLine()) != null&&(line2 = br.readLine()) != null) {
 						if (hashtext1.equals(line1)&&hashtext.equals(line2)){
 							i=arrange(i);
-							out.println("<h1>WELCOME "+plaintext1+" !</h1>");
 							String ua = request.getHeader( "User-Agent" );
 							num=i;
 							System.out.println(a[num]);
 							if (ua.equals(a[num])){
-								out.println("Dear authorised agent,<br>");
 								Cookie[] all=request.getCookies();
 								for(Cookie I:all){
 									if(I.getName().equals("CookieDonationBox")){
@@ -69,15 +67,18 @@
 										}catch(Exception e){
 										}
 										if(number>0){
-											out.println("Sufficiently paid!<br>Heres the flag \"GCTF{w3_ar3_7h3_c00k13_ag3nc9}\"");
+											totalzz="<h1>WELCOME "+plaintext1+" !</h1>Dear authorised agent,<br>Sufficiently paid!<br>Heres the flag \"GCTF{w3_ar3_7h3_c00k13_ag3nc9}\"";
+											img="others/cookies.png";
 										}else{
-									    	out.println("you may be real...but you'll have to pay the required cookies to enter!");
+											totalzz="<h1>WELCOME "+plaintext1+" !</h1>Dear authorised agent,<br>you may be real...but you'll have to pay the required cookies to enter!";
+											img="others/hide.jpg";
 										}
 									}
 								}
 								tru=true;
 							}else{
-								out.print("YOU ARE NOT THE AGENT IM LOOKING FOR! <br>GO AWAY!");
+								totalzz+="<h1>WELCOME "+plaintext1+" !</h1>YOU ARE NOT THE AGENT IM LOOKING FOR! <br>GO AWAY!";
+								img="others/hide.jpg";
 								tru=true;
 							}
 						}
@@ -91,10 +92,17 @@
 					}
 			}
 			if(tru==false){
-				out.print("<h1>Oops! Wrong password!</h1><p><a href=\"../index.jsp\">Return to Civilisation</a></p>");
+				totalzz="<h1>Oops! Wrong password!</h1><p><a href=\"../index.jsp\">Return to Civilisation</a></p>";
+				img="others/errs.png";
 					
 			}
 		%>
+	</head>
+	<body background=<%=img %>><br><br><br>
+	<div class="col-md-4 col-md-offset-4"  style="background-color:#CCD1D1 ;">
+		<%=totalzz %>
+		<br><br>
+		</div>
 <%!int arrange(int i){
 	i=i+3;
 	i=(i/2);

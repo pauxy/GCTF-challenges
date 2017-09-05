@@ -9,7 +9,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body background="more/cookiecookie.jfif">
+<p style="font-size:3em;background-color:powderblue;">INTERNATIONAL COOKIE AGENCY &#x1F36A;<br></p>
+<body background="others/cookiecookie.jfif">
 <%  Random randomGenerator = new Random();
 	int randomInt = randomGenerator.nextInt(10000);
 	Cookie k=new Cookie("CookieDonationBox","0");
@@ -17,7 +18,7 @@
 	response.addCookie(k);
 %>
 <br><br><br>
-<div class="col-md-4 col-md-offset-4 rounded"  style="background-color:#CCD1D1 ;">
+<div class="col-md-4 col-md-offset-4"  style="background-color:#CCD1D1 ;">
 <h1>AGENT LOGIN PAGE</h1>
 <form action="Admin.jsp" method="post"class="form-inline">
 					<label>User name: </label>
