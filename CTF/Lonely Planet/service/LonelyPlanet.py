@@ -84,7 +84,7 @@ WELCOME TO THE TRANSLATION CONSOLE OF LONELY PLANET! WE HOPE YOU DO A GOOD JOB T
                 k=False
             i=i+1
         if k==True:
-            xx="\nYOU HAVE SUCCESSFULLY TRANSLATED FOR THE DAY! HERES YOUR FLAG\nGCTF{wu664_1u66a_du66_du66_111}\n"
+            xx="\nYOU HAVE SUCCESSFULLY TRANSLATED FOR THE DAY! HERES YOUR FLAG\nGCTF{1337_7r4n5l4710n_in_progress}\n"
         else:
             xx="\nYOU FAILED, YOUR POSITION HAS DROPPED FROM \"SENIOR TRANSLATOR\" TO \"CLERK\"\n"
         c.sendall(xx.encode())
