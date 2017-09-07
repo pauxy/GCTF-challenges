@@ -7,8 +7,7 @@ I found this mysterious secret agency site while browsing the web, please help m
 Created by paux
 
 ## Setup Guide
-1. Download tomcat
-2. upload all 4 files into directory (NO SQL)
+1. run startup.sh
 
 ## Distribution
 no files to be distributed
