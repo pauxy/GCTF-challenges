@@ -27,13 +27,13 @@ no files to be distributed
 
 6.  When you check the results, you will realise that two plaintexts are shown together :
 ```
-username : root
-password : roottoor
+username : roottoor
+password : hello
 ```
 
 7.  Upon login, you will get a different screen
 ```
-WELCOME root !
+WELCOME roottoor !
 YOU ARE NOT THE AGENT IM LOOKING FOR! 
 GO AWAY! 
 ```
@@ -42,13 +42,13 @@ GO AWAY!
 
 9.  When you change the user-agent to the correct one, you will get 
 ```
-WELCOME root !
+WELCOME roottoor !
 you may be real...but you'll have to pay the required cookies to enter!
 ```
 
 10. Checking again will show that the problem is with the cookie "CookieDonationBox" you can then use the chrome extension "EditThisCookie" to change it to an integer greater than 1, enabling the flag to be printed
 ```
-WELCOME root !
+WELCOME roottoor !
 Sufficiently paid!
 Heres the flag "GCTF{w3_ar3_7h3_c00k13_ag3nc9}"
 ```
