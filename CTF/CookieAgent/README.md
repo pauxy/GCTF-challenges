@@ -10,7 +10,9 @@ Created by paux
 1. run startup.sh
 
 ## Distribution
-no files to be distributed
+< ip > : < port >
+
+as of now, port is `9911`
 
 ## Solution
 
