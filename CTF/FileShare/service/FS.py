@@ -110,7 +110,7 @@ YOUR INPUT => '''.format(user).encode())
             k=f.readline()
             z="HELLO ADMINISTRATOR!\n~~~WELCOME TO THE ADMIN PORTAL~~~\n           a)  LIST ALL FILES\n           b)  PRINT FLAG\nYOUR INPUT => "
             c.sendall(z.encode())
-            c.sendall(60*2)
+            c.settimeout(60*2)
             h=c.recv(3).decode().strip()
             if h=="a":
                 k=os.listdir("files/")
