@@ -74,9 +74,11 @@ WELCOME TO THE GREATEST FILE SHARING SERVICE IN ALL OF ZE WORLD!
            a)  CREATE FILE
            b)  VIEW FILE
 YOUR INPUT => '''.format(user).encode())
+        c.settimeout(2*60)
         r=c.recv(100).decode().strip()
         if r=="a":
             c.sendall("YOU HAVE CHOSEN TO MAKE FILE!\nPLEASE INPUT NAME!(3-5 CHARAS ONLY) => ".encode())
+            c.settimeout(60*2)
             nam=c.recv(135).decode().strip()
             c.sendall("PLEASE INPUT MESSAGE  => ".encode())
             lll=c.recv(125).decode().strip()
@@ -94,6 +96,7 @@ YOUR INPUT => '''.format(user).encode())
                 c.close()
         elif r=="b":
             c.sendall("YOU HAVE CHOSEN TO VIEW FILE\nPLEASE INPUT KEY! => ".encode())
+            c.settimeout(60*2)
             lll=c.recv(100).decode().strip()
             if(len(lll)>33):
                 c.sendall("KEY TOO LONG, INVALID\nGOODBYE\n".encode())
@@ -107,6 +110,7 @@ YOUR INPUT => '''.format(user).encode())
             k=f.readline()
             z="HELLO ADMINISTRATOR!\n~~~WELCOME TO THE ADMIN PORTAL~~~\n           a)  LIST ALL FILES\n           b)  PRINT FLAG\nYOUR INPUT => "
             c.sendall(z.encode())
+            c.sendall(60*2)
             h=c.recv(3).decode().strip()
             if h=="a":
                 k=os.listdir("files/")
@@ -116,6 +120,7 @@ YOUR INPUT => '''.format(user).encode())
                 c.sendall("GOODBYE\n".encode())
             elif h=="b":
                 c.sendall("PASSWORD PLS ! =>".encode())
+                c.settimeout(60*2)
                 z=c.recv(10).decode().strip()
                 if int(z)==check("REALADMIN"):
                     c.sendall("HERES THE FLAG!\n".encode())
