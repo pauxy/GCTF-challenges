@@ -4,7 +4,7 @@
 - [AutoEncryptSys](CTF/AutoEncryptSys)
 - [BinaryBacon](CTF/BinaryBacon)
 - [CookieAgent](CTF/CookieAgent)
-- [DEAD BABE IS DEAD](CTF/DEAD%20BABE%20IS%20DEAD)
+- [CAFE BABE IS BABE](CTF/CAFE%20BABE%20IS%20BABE)
 - [FILECEPTION](CTF/FILECEPTION)
 - [ILikeScrabble](CTF/ILikeScrabble)
 - [Lonely Planet](CTF/Lonely%20Planet)
