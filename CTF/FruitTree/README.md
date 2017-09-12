@@ -18,9 +18,11 @@ image for "decrypt"
 2.	but instead of characters, it is symbols
 3.	i gave hints abount the first section of symbols,basically a song by nick drake called fruit tree
 4.	using that you can then decipher the flag
+
 OR 
-5	another way would be to analyse the percentage of symbols appearing and corresponding it to the
-6	get flag! 
+
+5.  another way would be to analyse the percentage of symbols appearing and corresponding it to the
+6.  get flag! 
 
 ## Recommended Reads
 - https://en.wikipedia.org/wiki/Substitution_cipher
