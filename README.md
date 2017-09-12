@@ -14,6 +14,7 @@
 - [Where_Is_It](CTF/Where_Is_It)
 - [DirtyHex](CTF/DirtyHex)
 - [FileShare](CTF/FileShare)
+- [FruitTree](CTF/FruitTree)
 ## Credits
 ![](https://media.giphy.com/media/7ZWft74Fqo7aU/giphy.gif)
 
