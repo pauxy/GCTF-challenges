@@ -21,5 +21,3 @@ wav file
 ## Recommended Reads
 
 
-## Possible changes in futurish times
-- instead of email, use telegram bot or discord bot
