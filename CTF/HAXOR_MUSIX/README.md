@@ -10,7 +10,7 @@ Created by paux
 
 ## Distribution
 wav file
-- hackerish.wav
+- HACKER.wav
 
 
 ## Solution
