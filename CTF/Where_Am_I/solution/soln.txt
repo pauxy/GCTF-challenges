@@ -1,0 +1,3 @@
+encrypted= PWokHvOGw3sRaV1hEC0qSakL1vSImr0T9UeQdvE/TfA=
+key=       weirdquestionsareweird
+flag=      GCTF{th15_435_t00_w31rd_5_m3}
