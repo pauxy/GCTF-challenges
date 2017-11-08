@@ -2,32 +2,39 @@
 
 void setup() {
   pinMode(1, OUTPUT);
-  char l[]={'.','-','-',' ','.',' ','.','.',' ','.','-','.',' ','-','.','.',' ','-','-','.','-',' ','.','.','-',' ','.',' ','.','.','.',' ','-',' ','.','.',' ','-','-','-',' ','-','.',' ','.','.','.',' ','.','-',' ','.','-','.',' ','.',' ','.','-','-',' ','.',' ','.','.',' ','.','-','.',' ','-','.','.'};
-  char i[]={'I',' ','h','a','v','e',' ','a',' ','t','o','p',' ','s','e','c','r','e','t',' ','m','e','s','s','a','g','e',' ','f','o','r',' ','y','o','u',' ','a','n','d',' ','o','n','l','y',' ','y','o','u','!',' ','p','l','e','a','s','e',' ','k','e','e','p',' ','i','t',' ','a',' ','s','e','c','r','e','t'};
+  char l[]={'.','-','-',' ','.',' ','.','.',' ','.','-','.',' ','-','.','.',' ','-','-','.','-',' ','.','.','-',' ','.',' ','.','.','.',' ','-',' ','.','.',' ','-','-','-',' ','-','.',' ','.','-','.',' ','.','-','-',' ','-','.','.'};
   cmd();
   DigiKeyboard.println("notepad");
-  DigiKeyboard.delay(300);
+  DigiKeyboard.delay(400);
+  DigiKeyboard.println("Hey friend i have a secret message for you! keep it safe!");
+  DigiKeyboard.println("Heres the secret thing");
+  DigiKeyboard.print("bp9SQPPssHVXgnOOkQ5k91jAfMgC0ur2jfPIwwZh8Cc");//"=" is needed here but can also be guessed when you get an error
+  DigiKeyboard.delay(250);
+  DigiKeyboard.println("SbCg==");//fake lol
+  // why am i doing this ? i dunno
+  DigiKeyboard.println("Bye Frien, dont lose it!!!!");
+  
   for(int z = 0; z < 73; z++){
     if(l[z]=='.'){
-       blinks(50);DigiKeyboard.print(i[z]);
+       blinks(60);
     }else if(l[z]=='-'){
-      blinks(550);DigiKeyboard.print(i[z]);
+      blinks(550);
     }else{
-    delay(400);DigiKeyboard.print(i[z]);
+    delay(600);
     }
-    delay(50);
+    delay(80);
   }
-  DigiKeyboard.println();
-  DigiKeyboard.println("Heres the thing");
-  DigiKeyboard.println("PWokHvOGw3sRaV1hEC0qSakL1vSImr0T9UeQdvE/TfA=");
-  DigiKeyboard.println("Bye Frien");
+  while (true){
+    blinks(random(60,660));
+    delay(80);
+  }
 }
 void cmd() {
-  DigiKeyboard.delay(450);
+  DigiKeyboard.delay(500);
   DigiKeyboard.sendKeyStroke(0, MOD_GUI_LEFT);
-  DigiKeyboard.delay(700);
+  DigiKeyboard.delay(850);
   DigiKeyboard.println("cmd");
-  DigiKeyboard.delay(1300);
+  DigiKeyboard.delay(1750);
   }
 void blinks(int i){
   digitalWrite(1, HIGH);  

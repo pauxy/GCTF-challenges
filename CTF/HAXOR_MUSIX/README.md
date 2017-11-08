@@ -7,17 +7,17 @@ Created by paux
 
 ## Setup Guide
 1. put file on server
-
+2. hide file `service.txt` on server
 ## Distribution
 wav file
-- HACKER.wav
+- H4X0R_MUZIK.wav
 
 
 ## Solution
 1.	open file in an audio analyzer eg. audacity 
-2.	you will see an email `m41l.m3.pl5@gmail.com`
-3.	sending an email to the email will make you receive a email containing the flag "encrypted" in ook and hidden under ascii art in white text
-4.	decrypt it and get flag! woo
-## Recommended Reads
+2.	you will see the string `rebrand.ly/GcTfHiDdEn`
+3.	going to the site will reveal service.txt
+4.	decrypt it and get flag!
 
-
+### Flag
+`GCTF{much_mu51x_much_h4x0r}`
